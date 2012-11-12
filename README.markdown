@@ -1,10 +1,9 @@
 Summary
 -------
 
-This is a chat application written in Opa.
+This is a chat application written in Opa and updated to be able to run on Heroku.
 
-Compile and run with:
-
-`make run`
-
-More about this example in Opa manual, chapter [Hello, chat](https://github.com/MLstate/opalang/wiki/Hello%2C-chat).
+```shell
+$ heroku create --stack cedar --buildpack https://github.com/tsloughter/heroku-buildpack-opa.git
+$ git push heroku master
+```
